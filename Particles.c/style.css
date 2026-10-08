@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+* {
+  box-sizing: border-box;
+}
+
+/*===== レイアウトのためのCSS =====*/
+
+html,
+body {
+  /*高さを100%にして描画エリアをとる*/
+  height: 100%;
+}
+
+#wrapper {
+  /*描画を#particles.jsより上にするため*/
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  /* 深海のような深いブルーのグラデーション*/
+  background: linear-gradient(to bottom, #051937, #004d7a, #008793, #95d6ca);
+}

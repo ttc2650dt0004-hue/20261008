@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- particles-js は wrapper の外（同階層）に置くことで、CSSの position: fixed; z-index: -1 が正しく機能します -->
+    <div id="particles-js"></div>
+
+    <div id="wrapper">
+        <h1>Particles.js</h1>
+    </div>
+
+    <!-- ライブラリ → 自作JS の順で読み込み -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
